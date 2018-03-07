@@ -1,0 +1,76 @@
+.carousel-slider {
+  position: relative;
+
+  .headline {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .item {
+    position: relative;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+
+    .card {
+      width: 80%;
+      //max-width: 600px;
+      min-height: 450px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      margin-top: 20px;
+      @media(max-width: 980px){
+        width: 85%;
+        min-height: 300px;
+      }
+      @media(max-width: 690px){
+        width: 85%;
+        min-height: 250px;
+      }
+      @media(max-width: 490px){
+        //width: 85%;
+        min-height: auto;
+      }
+      .card-body {
+        overflow: auto;
+      }
+    }
+
+  }
+
+  .container {
+    height: 60vw;
+    max-height: 100vh;
+    min-height: 400px;
+    position: relative;
+  }
+
+  .slick-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    li {
+      height: 14px;
+      width: 14px;
+      button {
+        height: 14px;
+        width: 14px;
+        &:before {
+          content: "";
+          border: 2px solid #fff;
+          background: #000;
+          border-radius: 50%;
+          transition: .3s;
+          height: 14px;
+          width: 14px;
+        }
+      }
+    }
+  }
+
+}

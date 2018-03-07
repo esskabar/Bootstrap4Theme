@@ -1,0 +1,15 @@
+//@import "partials/reset";
+
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/slick/slick.scss";
+@import "vendor/slick/slick-theme.scss";
+
+@import "../fonts/font-awesome-4.7.0/scss/font-awesome.scss";
+
+@import "partials/general";
+@import "partials/variables";
+@import "partials/template-parts/section-top-slider";
+@import "partials/template-parts/section-carousel-slider";
+@import "partials/template-parts/section-post";
+
+@import "partials/footer";
